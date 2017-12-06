@@ -70,9 +70,9 @@ class Controller extends WebController
      */
     public function edit(EditPostRequest $request)
     {
-        $post = Apiato::call('Post@GetPostByIdAction', [$request]);
+        $post = Apiato::call('Post@FindPostByIdAction', [$request]);
 
-//        return view('post::edit', compact('post'));
+        return view('post::edit', compact('post'));
     }
 
     /**
@@ -84,7 +84,7 @@ class Controller extends WebController
     {
         $post = Apiato::call('Post@UpdatePostAction', [$request]);
 
-        // ..
+        return response('Post updated!');
     }
 
     /**

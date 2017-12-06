@@ -11,8 +11,9 @@ class UpdatePostAction extends Action
     public function run(Request $request)
     {
         $data = $request->sanitizeInput([
-            // add your request data here
+            'title', 'body'
         ]);
+
 
         $post = Apiato::call('Post@UpdatePostTask', [$request->id, $data]);
 
