@@ -60,7 +60,7 @@ class Controller extends WebController
     {
         $post = Apiato::call('Post@CreatePostAction', [$request]);
 
-        return redirect();
+        return response('Post created successfully');
     }
 
     /**
@@ -96,6 +96,6 @@ class Controller extends WebController
     {
          $result = Apiato::call('Post@DeletePostAction', [$request]);
 
-         // ..
+         return response('Post deleted!');
     }
 }

@@ -29,7 +29,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class = "navbar-brand" href = "{{ url('/') }}">
+                    <a class = "navbar-brand" href = "{{route('web_post_index')}}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -38,7 +38,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class = "nav navbar-nav">
                         <ul class = "nav navbar-nav navbar-right">
-                            <li><a href = "#">Create Post</a></li>
+                            <li><a href = "{{route('web_post_create')}}">Create Post</a></li>
                         </ul>
                     </ul>
 
