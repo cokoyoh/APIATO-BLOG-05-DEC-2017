@@ -17,6 +17,6 @@ class GetAllPostsTask extends Task
 
     public function run()
     {
-        return $this->repository->paginate(5);
+        return $this->repository->orderBy('id', 'desc')->paginate(5);
     }
 }

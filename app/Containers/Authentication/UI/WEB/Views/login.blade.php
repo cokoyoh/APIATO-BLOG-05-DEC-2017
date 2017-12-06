@@ -125,6 +125,10 @@
 
                 <button>login</button>
             </form>
+            <div class="center">
+                <p>OR</p>
+                <a class="btn btn-sm btn-success" href="#">Register</a>
+            </div>
         </div>
     </div>
 

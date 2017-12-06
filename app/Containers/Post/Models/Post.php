@@ -14,7 +14,6 @@ class Post extends Model
     ];
 
     protected $attributes = [
-
     ];
 
     protected $hidden = [

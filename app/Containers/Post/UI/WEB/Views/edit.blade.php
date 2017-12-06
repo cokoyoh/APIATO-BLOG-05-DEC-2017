@@ -14,9 +14,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Body</label>
-                        <textarea class="form-control" id="body"  name="body" rows="8"  placeholder="What's on your mind?">
-                        {{$post->body}}
-                        </textarea>
+                        <textarea class="form-control" id="body"  name="body" rows="8"  placeholder="What's on your mind?">{{$post->body}}</textarea>
                     </div>
                     <div class="form-group">
                         <button type="submit" value="submit" class="btn btn-success">Add</button>
