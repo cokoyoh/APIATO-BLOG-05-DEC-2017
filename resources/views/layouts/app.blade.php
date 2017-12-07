@@ -43,7 +43,11 @@
                     </ul>
 
                     <!-- Right Side Of Navbar -->
-
+                    <ul class = "nav navbar-nav">
+                        <ul class = "nav navbar-nav navbar-left">
+                            <li><a href = "{{route('logout')}}">Logout</a></li>
+                        </ul>
+                    </ul>
                 </div>
             </div>
         </nav>

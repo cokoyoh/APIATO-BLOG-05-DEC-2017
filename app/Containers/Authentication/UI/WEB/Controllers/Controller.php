@@ -67,7 +67,7 @@
          */
         public function logoutAdmin() {
             Apiato::call('Authentication@WebLogoutAction');
-            return redirect('login');
+            return redirect('login-web');
         }
 
     }
