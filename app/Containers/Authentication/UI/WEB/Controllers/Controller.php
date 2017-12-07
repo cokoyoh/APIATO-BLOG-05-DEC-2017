@@ -41,8 +41,7 @@
             } catch (Exception $e) {
                 return redirect('login')->with('status', $e->getMessage());
             }
-
-            return is_array($result) ? redirect('login')->with($result) : redirect('dashboard');
+            return is_array($result) ? redirect('login')->with($result) : redirect('/posts');
         }
 
         public function loginWeb(LoginRequest $request) {
@@ -51,8 +50,7 @@
             } catch (Exception $e) {
                 return redirect('login')->with('status', $e->getMessage());
             }
-
-            return is_array($result) ? redirect('login')->with($result) : redirect('dashboard');
+            return is_array($result) ? redirect('login')->with($result) : redirect('/posts');
         }
 
         /**
@@ -69,7 +67,6 @@
          */
         public function logoutAdmin() {
             Apiato::call('Authentication@WebLogoutAction');
-
             return redirect('login');
         }
 
